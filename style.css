@@ -1,12 +1,13 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('https://www.myfonts.com/fonts/urtd/pexico/regular/'); 
+  font-family: 'Pexico-Regular';
+  src: url('assets/webfonts/37494D_0_0.eot');
+  src: url('assets/webfonts/37494D_0_0.eot?#iefix') format('embedded-opentype'), url('assets/webfonts/37494D_0_0.woff2') format('woff2'), url('assets/webfonts/37494D_0_0.woff') format('woff'), url('assets/webfonts/37494D_0_0.ttf') format('truetype');
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'MyWebFont';
+  font-family: 'Pexico-Regular';
 }
 
 body {
@@ -167,7 +168,6 @@ li input:checked + ol > li{
 li input:checked + ol > li:first-child{
   margin:0 0 0.125em;
 }
-
 
 @media only screen and (max-width: 1024px) {
     header video {
