@@ -9,4 +9,3 @@ const cleanDate = () => {
 }
 
 cleanDate();
-console.log(cleanDate());
