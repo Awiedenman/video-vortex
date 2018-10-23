@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('https://www.myfonts.com/fonts/urtd/pexico/regular/'); 
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'MyWebFont';
 }
 body {
   background: #000;
@@ -32,6 +38,11 @@ header .container {
 
 .last-updated {
   padding: 15px 0 0;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 
+    -1px 0px 0 rgba(169, 0, 255, 1),
+    -2px 0px 0 rgba(16, 10, 255, 1);
 }
 
 .search-bar {
