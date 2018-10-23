@@ -8,6 +8,7 @@
   margin: 0;
   font-family: 'MyWebFont';
 }
+
 body {
   background: #000;
 }
@@ -41,8 +42,8 @@ header .container {
   margin: 10px 0;
   color: #fff;
   text-shadow: 
-    -1px 0px 0 rgba(169, 0, 255, 1),
-    -2px 0px 0 rgba(16, 10, 255, 1);
+  -1px 0px 0 rgba(169, 0, 255, 1),
+  -2px 0px 0 rgba(16, 10, 255, 1);
 }
 
 .search-bar {
@@ -55,9 +56,11 @@ header .container {
   outline: none;
   background-color: #000;
 }
+
 .search-form {
   position: relative;
 }
+
 .search-form:after, .search-form:before {
   content: '';
   position: absolute;
@@ -67,12 +70,36 @@ header .container {
   height: 2px;
   top: 0; 
   box-shadow: 
-    -2px 2px 0 rgba(169, 0, 255, 1),
-    -4px 2px 0 rgba(16, 10, 255, 1), 
-    2px 2px 0 rgba(255, 0, 105, 1);
+  -2px 2px 0 rgba(169, 0, 255, 1),
+  -4px 2px 0 rgba(16, 10, 255, 1), 
+  2px 2px 0 rgba(255, 0, 105, 1);
 }
 
 .search-form:after {
   top: unset;
   bottom: 0;
+}
+
+main .container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 252px auto; 
+  grid-auto-rows: 300px;
+  grid-template-areas: 
+    "a b"
+    "a b"
+    "a b";
+  align-items: start;
+} 
+
+.checkbox-container {
+  grid-area: a;
+}
+
+.checkbox {
+  display: block;
+}
+
+label{
+  color: #fff;
 }
