@@ -10,50 +10,117 @@
 <body>
   
   <header>
+    <div class="header-background-image" hidden>
+    </div>
     <video autoplay loop muted>
       <source src="./assets/Images/vv-grid-bg.mp4" type="video/mp4">
-      </video>
-      <img id="logo" src="./assets/Images/vv-logo.svg" alt="Brand logo for Video Vortex">
-      <div class="container">
-        <p class="last-updated"></p>
-        <form action="" class="search-form">
-          <input class="search-bar" type="text" placeholder="Search Selection">
-        </form>
-      </div>
-    </header>
+    </video>
+    <img id="logo" src="./assets/Images/vv-logo.svg" alt="Brand logo for Video Vortex">
+    <div class="container">
+      <p class="last-updated"></p>
+      <form action="" class="search-form">
+        <input class="search-bar" type="text" placeholder="Search Selection">
+      </form>
+    </div>
+  </header>
     
+  <main>
+    <div class="container">
+      <aside class="checkbox-container">
+        <ol class="tree">
+          <li>
+            <label for="staff-picks">Staff Picks</label>
+            <input class="checkbox" type="checkbox" name="staff-picks">
+          </li>
+          <li>
+            <label for="new-additions">New Additions</label>
+            <input class="checkbox" type="checkbox" name="new-additions">
+          </li>
+          <li>
+            <label for="format">format</label>
+            <input id="format" class="checkbox" type="checkbox" name="format">
+            <ol>
+              <li>
+                <label for="blu-ray">blu-ray</label>
+                <input class="file checkbox" type="checkbox" name="blu-ray">
+              </li>
+              <li>
+                <label for="dvd">dvd</label>
+                <input class="file checkbox" type="checkbox" name="dvd">
+              </li>
+              <li>
+                <label for="vhs">vhs</label>
+                <input class="file checkbox" type="checkbox" name="vhs">
+              </li>
+            </ol>
+          </li>
+          <li>
+            <label for="genre">genre</label>
+            <input id="genre" class="checkbox" type="checkbox" name="genre">
+            <ol>
+              <li>
+                <label for="comedy">comedy</label>
+                <input class="file checkbox" type="checkbox" name="comedy">
+              </li>
+              <li>
+                <label for="drama">drama</label>
+                <input class="file checkbox" type="checkbox" name="drama">
+              </li>
+              <li>
+                <label for="horror">horror</label>
+                <input class="file checkbox" type="checkbox" name="horror">
+              </li>
+              <li>
+                <label for="documentary">documentary</label>
+                <input class="file checkbox" type="checkbox" name="documentary">
+              </li>
+            </ol>
+          </li>
+          <li>
+            <label for="decade">decade</label>
+            <input id="decade" class="checkbox" type="checkbox" name="decade">
+            <ol>
+              <li>
+                <label for="fifties">fifties</label>
+                <input class="file checkbox" type="checkbox" name="fifties">
+              </li>
+              <li>
+                <label for="sixties">sixties</label>
+                <input class="file checkbox" type="checkbox" name="sixties">
+              </li>
+              <li>
+                <label for="seventies">seventies</label>
+                <input class="file checkbox" type="checkbox" name="seventies">
+              </li>
+              <li>
+                <label for="eighties">eighties</label>
+                <input class="file checkbox" type="checkbox" name="eighties">
+              </li>
+              <li>
+                <label for="nineties">nineties</label>
+                <input class="file checkbox" type="checkbox" name="nineties">
+              </li>
+            </ol>
+          </li>
+        </ol> 
+      </aside>
+      
+      <section>
+        <h3 class="video-search-info"></h3>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+        <article class="video-selection"></article>
+      </section>
+    </div>
+  </main>
     
-    <main>
-      <div class="container">
-        <aside class="checkbox-container">
-          <label for="genre">Staff Picks</label>
-          <input class="checkbox" type="checkbox" name="genre">
-          <label for="new-additions">New Additions</label>
-          <input class="checkbox" type="checkbox" name="new-additions">
-          <label for="blu-ray">Blu-Ray</label>
-          <input class="checkbox" type="checkbox" name="blu-ray">
-          <label for="DVD">DVD</label>
-          <input class="checkbox" type="checkbox" name="DVD">
-          <label for="vhs">Vhs</label>
-          <input class="checkbox" type="checkbox" name="vhs">
-        </aside>
-        
-        <section>
-          <h3 class="video-search-info"></h3>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-          <article class="video"></article>
-        </section>
-      </div>
-    </main>
-    
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
 </html>
