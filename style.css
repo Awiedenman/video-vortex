@@ -157,13 +157,14 @@ li input:checked + ol > li:first-child{
 }
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
     header video {
       display: none;
     }
 
-    .header-background-image {
-        display: block;
-        background-image:url('./assets/Images/vv-grid-bg.jpg');
+    header .background-image {
+      display: block;
+      background-image:url('./assets/Images/vv-grid-bg.jpg');
+      width: 100%;
     }
 }
