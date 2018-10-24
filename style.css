@@ -109,6 +109,10 @@ main .container {
   display: block;
 }
 
+.multiple {
+  opacity: 0;
+}
+
 label {
   color: #fff;
 }
@@ -134,11 +138,13 @@ main section {
 }
 /* ................. */
 
-input{font-size:1em;}
+input{
+  font-size:1em;
+}
 
 ol.tree{padding-left:22px;}
 
-li{
+li {
   list-style-type:none;
   color:#fff;
   position:relative;
