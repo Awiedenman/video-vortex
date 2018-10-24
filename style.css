@@ -113,6 +113,12 @@ main .container {
   opacity: 0;
 }
 
+li .multiple + ol {
+  height: 1em;
+  margin: -16px 0 0 -44px;
+  background: url("./assets/Images/vv-arrow-menu-and-filter.svg") no-repeat 40px 0;
+}
+
 label {
   color: #fff;
 }
