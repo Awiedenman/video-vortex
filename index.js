@@ -8,4 +8,11 @@ const cleanDate = () => {
   dateShownOnPage.innerText = 'LAST UPDATED: ' + cleanDate;
 }
 
+const toggleFilterMenu = (event) => {
+  console.log('shit');
+  document.querySelector('.menu-tree').classList.toggle('hidden')
+}
+
 cleanDate();
+
+document.querySelector('.menu-icon').addEventListener('click', toggleFilterMenu);

@@ -77,6 +77,11 @@ main {
   background-color: #000;
 }
 
+.search-bar:focus::-webkit-input-placeholder {
+  color: #000;
+  text-shadow: none;
+}
+
 .search-bar::placeholder {
   color: #fff;
   text-shadow:
@@ -114,6 +119,18 @@ main {
   height: 30px;
   width: 30px;
   vertical-align: bottom;
+}
+
+.menu-tree {
+  display: none;
+}
+
+.hidden {
+  display: block;
+  position: absolute;
+  right: 0;
+  background: #F25597;
+  /* z-index: 3; */
 }
 
 .menu-icon {
@@ -202,9 +219,41 @@ main section {
 }
 
 .video-selection {
-  border-bottom: 1px dotted rgba(169, 0, 255, 1);
   height: 10%;
 }
+
+.dotted-line {
+  /* border-bottom: 1px dotted #fff; */
+  height:14px;
+  /* specify a height for this hr */
+  overflow:hidden;
+}
+
+.dotted-line:after {
+    content: ".......................................................................";
+    letter-spacing: 4px;
+    color:#000;
+    /* Use letter-spacing to increase space between dots*/
+}
+
+/* .video-selection {
+  position: relative;
+  height: 10%;
+}
+
+.dotted-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background-image: linear-gradient(to right, transparent 75%, #A900FF 25%);
+  background-size: 4px 100%;
+   box-shadow: -2px 2px 0 rgba(169, 0, 255, 1),
+   -4px 2px 0 rgba(16, 10, 255, 1),
+   2px 2px 0 rgba(255, 0, 105, 1);
+} */
+
 
 .video-search-info {
   text-transform: uppercase;
@@ -249,34 +298,34 @@ li label{
 }
 
 li input{
-  width:1em;
-  height:1em;
-  position:absolute;
-  left:-0.5em;
-  top:0;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  left: -0.5em;
+  top: 0;
   /* opacity:0; */
   cursor: pointer;
 }
 
 li input + ol > li{
-  display:none;
-  margin-left:-14px !important;
-  padding-left:1px
+  display: none;
+  margin-left: -14px !important;
+  padding-left: 1px
 }
 
 li input:checked + ol{
-  height:auto;
-  margin:-21px 0 0 -44px;
-  padding:25px 0 0 80px;
+  height: auto;
+  margin: -21px 0 0 -44px;
+  padding: 25px 0 0 80px;
 }
 
 li input:checked + ol > li{
-  display:block;
-  margin:0 0 0.063em;
+  display: block;
+  margin: 0 0 0.063em;
 }
 
 li input:checked + ol > li:first-child{
-  margin:0 0 0.125em;
+  margin: 0 0 0.125em;
 }
 
 
@@ -284,6 +333,10 @@ li input:checked + ol > li:first-child{
     .container {
       width: calc(100% - 64px);
       margin: 0 32px;
+    }
+
+    #logo {
+      left: 30px;
     }
 
     header video {
