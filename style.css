@@ -42,13 +42,19 @@ header video {
 
 header .container {
   position: absolute;
-  bottom: 0;
+  top: 150px;
+}
+
+main {
+  margin: 81px 0;    
 }
 
 .last-updated {
   padding: 15px 0 0;
   margin: 10px 0;
   color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
   text-shadow: 
   -1px 0px 0 rgba(169, 0, 255, 1),
   -2px 0px 0 rgba(16, 10, 255, 1);
