@@ -95,14 +95,18 @@ main .container {
   grid-template-columns: 252px auto; 
   grid-auto-rows: 100vh;
   grid-template-areas: 
-    "a b";
+    "filter-tree video-information";
   align-items: start;
   z-index: 11;
   position: relative;
 } 
 
 .checkbox-container {
-  grid-area: a;
+  grid-area: filter-tree;
+}
+
+.video-information {
+  grid-area: video-information;
 }
 
 .checkbox {
@@ -115,12 +119,42 @@ main .container {
 
 li .multiple + ol {
   height: 1em;
-  margin: -16px 0 0 -44px;
+  margin: -37px 0 0 -48px;  
   background: url("./assets/Images/vv-arrow-menu-and-filter.svg") no-repeat 40px 0;
 }
 
 label {
   color: #fff;
+}
+
+.single:not(:checked),
+.single:checked {
+  opacity:0;
+}
+
+.custom-box {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  right: 133px;
+  /* margin-right: 12px; */
+  vertical-align: middle;
+  background-color: inherit;
+  color: #017b5f;
+  border: 2px solid #666;
+}
+
+.single:checked+label {
+  /* content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px; */
+  color: #01a982;
+  /* z-index: 3; */
 }
 
 main section {
@@ -158,9 +192,10 @@ li {
 }
 
 li label{
-  padding-left:12px;
+  padding-left: 18px;
   cursor: pointer;
   display: block;
+  margin: 20px 0;
 }
 
 li input{
@@ -204,5 +239,22 @@ li input:checked + ol > li:first-child{
       display: block;
       background-image:url('./assets/Images/vv-grid-bg.jpg');
       width: 100%;
+    }
+
+    main .container {
+      margin-top: 20px;
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: 252px auto;
+      grid-auto-rows: 100vh;
+      grid-template-areas:
+        "video-information video-information";
+      align-items: start;
+      z-index: 11;
+      position: relative;
+    }
+
+    .checkbox-container {
+      display: none;
     }
 }
