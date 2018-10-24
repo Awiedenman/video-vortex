@@ -55,7 +55,7 @@ main {
   margin: 25px 0;
   color: #fff;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   text-shadow: 
   -1px 0px 0 rgba(169, 0, 255, 1),
   -2px 0px 0 rgba(16, 10, 255, 1);
@@ -209,12 +209,22 @@ main section {
 .video-search-info {
   text-transform: uppercase;
   color: #fff;
+  /* padding: 15px 0 0; */
+  /* margin: 25px 0; */
+  font-size: 12px;
+  text-shadow: 
+  -1px 0px 0 rgba(169, 0, 255, 1),
+  -2px 0px 0 rgba(16, 10, 255, 1);
 }
 
 #video-search-info-span {
   text-transform: uppercase;
-  color: #fff;
+  color: #F25597;
   text-align: left;
+  text-shadow: 
+  -1px 0px 0 rgba(169, 0, 255, 1),
+  -2px 0px 0 rgba(16, 10, 255, 1);
+  font-weight: lighter;
 }
 /* ................. */
 
