@@ -43,7 +43,7 @@ header video {
 
 header .container {
   position: absolute;
-  top: 120px;
+  top: 100px;
 }
 
 main {
@@ -52,7 +52,7 @@ main {
 
 .last-updated {
   padding: 15px 0 0;
-  margin: 10px 0;
+  margin: 25px 0;
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
@@ -66,7 +66,7 @@ main {
   height: 30px;
   border: transparent;
   border-style: double;
-  padding: 28px 30px;
+  padding: 30px 30px 28px ;
   margin: 0;
   outline: none;
   font-size: 20px;
@@ -147,6 +147,10 @@ main .container {
 
 .checkbox {
   display: block;
+}
+
+#first-checkbox {
+  margin: 0 0 20px; 
 }
 
 .multiple {
@@ -267,6 +271,11 @@ li input:checked + ol > li:first-child{
 
 
 @media only screen and (max-width: 1024px) {
+    .container {
+      width: calc(100% - 64px);
+      margin: 0 32px;
+    }
+
     header video {
       display: none;
     }
@@ -281,11 +290,11 @@ li input:checked + ol > li:first-child{
     .menu-icon {
       display: block;
       position: absolute;
-      top: 18px;
+      top: 20px;
       right: 70px;
       background: url(./assets/Images/vv-icn-filter.svg) no-repeat;
-      height: 30px;
-      width: 30px;
+      height: 28px;
+      width: 28px;
     }
 
     #menu-icon-label {
@@ -294,7 +303,7 @@ li input:checked + ol > li:first-child{
       top: 8px;
       left: 40px;
       color: #F25597;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       text-shadow: -1px 0 0 rgba(169, 0, 255, 1);
     }
