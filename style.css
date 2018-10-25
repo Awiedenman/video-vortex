@@ -128,7 +128,7 @@ main {
 }
 
 
-.hidden {
+.hide-menu {
   display: block;
   position: absolute;
   right: 0;
@@ -167,20 +167,7 @@ main .container {
 
 .checkbox {
   display: block;
-}
-
-#first-checkbox {
-  margin: 0 0 20px; 
-}
-
-.multiple {
-  opacity: 0;
-}
-
-li .multiple + ol {
-  height: 1em;
-  margin: -37px 0 0 -48px;  
-  background: url("./assets/Images/vv-arrow-menu-and-filter.svg") no-repeat 40px 0;
+  margin: 0 0 20px;
 }
 
 label {
@@ -190,13 +177,33 @@ label {
     -2px 0px 0 rgba(16, 10, 255, 1);
 }
 
-.single:checked:parent {
-  color: #F25597;
+/* #first-checkbox {
+  margin: 0 0 20px; 
+} */
+
+.multiple {
+  opacity: 0;
+  z-index: 3;
 }
 
-.single:not(:checked),
-.single:checked {
+.single {
   opacity:0;
+  z-index: 2;
+}
+
+.multiple + ol {
+  position: relative;
+  bottom:6px;
+  right: 5px;
+  height: 2em;
+  margin: -37px 0 0 -48px;  
+  background: url("./assets/Images/vv-arrow-menu-and-filter.svg") no-repeat 40px 0;
+}
+
+.multiple:checked + ol {
+  /* position: relative; */
+  bottom: 22.5px;
+  right: 9px;
 }
 
 .custom-box {
@@ -205,13 +212,17 @@ label {
   width: 20px;
   height: 20px;
   left: -11px;
-  /* margin-right: 12px; */
+  top: -2px;
   vertical-align: middle;
   background-color: inherit;
   border: 2px solid #fff;
-  z-index: -1;
+  z-index: 1;
   box-shadow: -2px 2px 0 rgba(169, 0, 255, 1);
 }
+
+/* label > .single:checked {
+  color: #F25597;
+} */
 
 .single:checked + .custom-box {
   border: 2px solid #F25597;
@@ -225,10 +236,58 @@ label {
   left: 2px; 
   width: 100px;
   height: 100px;
-  /* color: #F25597;  */
-  /* border: 2px solid #F25597; */
   background: url('./assets/Images/vv-check.svg') no-repeat;
-  opacity: 1;
+}
+
+/* input {
+  font-size: 1em;
+} */
+
+.tree {
+  padding-left: 22px;
+}
+
+li {
+  list-style-type: none;
+  color: #fff;
+  position: relative;
+  margin-left: -15px;
+}
+
+li label {
+  padding-left: 18px;
+  display: block;
+  margin: 0 0 25px;
+}
+
+li input {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  cursor: pointer;
+  width: 160px;
+  height: 20px;
+}
+
+li input + ol > li {
+  display: none;
+  /* margin-left: -14px; */
+  /* padding-left: 1px */
+}
+
+li input:checked + ol {
+  height: auto;
+  margin: -21px 0 0 -44px;
+  padding: 25px 0 0 80px;
+}
+
+li input:checked+ol>li {
+  display: block;
+  margin: 0 0 0.063em;
+}
+
+li input:checked+ol>li:first-child {
+  margin: 0 0 0.125em;
 }
 
 main section {
@@ -294,56 +353,7 @@ main section {
 }
 /* ................. */
 
-input{
-  font-size:1em;
-}
 
-ol.tree{padding-left:22px;}
-
-li {
-  list-style-type:none;
-  color:#fff;
-  position:relative;
-  margin-left:-15px;
-}
-
-li label{
-  padding-left: 18px;
-  cursor: pointer;
-  display: block;
-  margin: 20px 0;
-}
-
-li input{
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  left: -0.5em;
-  top: 0;
-  /* opacity:0; */
-  cursor: pointer;
-}
-
-li input + ol > li{
-  display: none;
-  margin-left: -14px !important;
-  padding-left: 1px
-}
-
-li input:checked + ol{
-  height: auto;
-  margin: -21px 0 0 -44px;
-  padding: 25px 0 0 80px;
-}
-
-li input:checked + ol > li{
-  display: block;
-  margin: 0 0 0.063em;
-}
-
-li input:checked + ol > li:first-child{
-  margin: 0 0 0.125em;
-}
 
 
 @media only screen and (max-width: 1024px) {

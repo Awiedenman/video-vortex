@@ -10,7 +10,7 @@ const cleanDate = () => {
 
 const toggleFilterMenu = (event) => {
   console.log('shit');
-  document.querySelector('.menu-tree').classList.toggle('hidden')
+  document.querySelector('.menu-tree').classList.toggle('hide-menu')
 }
 
 cleanDate();
