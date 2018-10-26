@@ -141,7 +141,7 @@ main {
   display: block;
   position: absolute;
   right: 0;
-  background: #9d6f9ff0;
+  background: #df49b4d1;
 }
 
 .menu-icon {
@@ -170,13 +170,6 @@ main .container {
 .checkbox {
   display: block;
   margin: 0 0 20px;
-}
-
-.checkbox-amount{
-  position: absolute;
-  right: 10px;
-  bottom: 2px;
-  font-size: 12px;
 }
 
 label {
@@ -252,6 +245,17 @@ label {
    color: #fff;
    text-shadow: 1.5px 0px 0 rgba(255, 0, 105, 1),
    -2.5px 0px 0 rgba(16, 10, 255, 1);
+}
+
+.checkbox-amount {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 
+    -1px 0px 0 rgba(169, 0, 255, 1),
+    -2.5px 0px 0 rgba(16, 10, 255, 1);
 }
 
 .single:checked + .custom-box::after {
@@ -431,10 +435,10 @@ main section {
     #menu-icon-label {
       display: block;
       position: absolute;
-      top: 8px;
+      top: 6px;
       left: 40px;
       color: #F25597;
-      font-size: 12px;
+      font-size: 14px;
       text-transform: uppercase;
       text-shadow: -1px 0 0 rgba(169, 0, 255, 1);
     }
