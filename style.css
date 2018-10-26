@@ -23,7 +23,6 @@ header  {
 
 header video {
   width: 100%;
-  /* height: 300px;   */
   position: relative;
   z-index: 0;
 }
@@ -49,9 +48,7 @@ header .container {
 }
 
 main {
-  margin: 90px 0;
-  /* width:calc(100% - 240px); */
-  /* border-bottom: solid 2px #fff ; */
+  margin: 88px 0;
 }
 
 .bottom-line {
@@ -83,7 +80,7 @@ main {
   padding: 30px 30px 28px ;
   margin: 0;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   text-shadow: 
     -1px 0px 0 rgba(169, 0, 255, 1),
@@ -140,13 +137,11 @@ main {
   display: none;
 }
 
-
 .hide-menu {
   display: block;
   position: absolute;
   right: 0;
   background: #9d6f9ff0;
-  ;
 }
 
 .menu-icon {
@@ -160,10 +155,9 @@ main {
 main .container {
   margin-top: 20px;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 22% 77%; 
-  grid-template-areas: 
-    "filter-tree video-information";
+  grid-gap: 25px;
+  grid-template-columns: 27% 71%;
+  grid-template-areas: "filter-tree video-information";
   align-items: start;
   z-index: 11;
   position: relative;
@@ -189,8 +183,22 @@ label {
   color: #fff;
   text-shadow: 
     -1px 0px 0 rgba(169, 0, 255, 1),
-    -2px 0px 0 rgba(16, 10, 255, 1);
-    font-size: 14px;
+    -2.5px 0px 0 rgba(16, 10, 255, 1);
+  font-size: 17px;
+}
+
+.custom-box {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  left: -6px;
+  top: -4px;
+  vertical-align: middle;
+  background-color: inherit;
+  border: 2px solid #fff;
+  z-index: 1;
+  box-shadow: -2px 2px 0 rgba(169, 0, 255, 1);
 }
 
 .multiple {
@@ -224,22 +232,26 @@ label {
   transform: rotate(90deg);
 }
 
-.custom-box {
-  position: absolute;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  left: -6px;
-  top: -4px;
-  vertical-align: middle;
-  background-color: inherit;
-  border: 2px solid #fff;
-  z-index: 1;
-  box-shadow: -2px 2px 0 rgba(169, 0, 255, 1);
-}
-
 .single:checked + .custom-box {
   border: 2px solid #F25597;
+}
+
+#staff-picks {
+  color: #F25597;
+  text-shadow: -2.5px 0px 0 rgba(16, 10, 255, 1);
+}
+
+#genre {
+  color: #F25597;
+  text-shadow: 
+    1.5px 0px 0 rgba(255, 0, 105, 1),
+    -2.5px 0px 0 rgba(16, 10, 255, 1);
+}
+
+#decade {
+   color: #fff;
+   text-shadow: 1.5px 0px 0 rgba(255, 0, 105, 1),
+   -2.5px 0px 0 rgba(16, 10, 255, 1);
 }
 
 .single:checked + .custom-box::after {
@@ -252,10 +264,6 @@ label {
   height: 100px;
   background: url('./assets/Images/vv-check.svg') no-repeat;
 }
-
-/* input {
-  font-size: 1em;
-} */
 
 .tree {
   padding-left: 22px;
@@ -285,8 +293,6 @@ li input {
 
 li input + ol > li {
   display: none;
-  /* margin-left: -14px; */
-  /* padding-left: 1px */
 }
 
 li input:checked + ol {
@@ -295,12 +301,12 @@ li input:checked + ol {
   padding: 25px 0 0 80px;
 }
 
-li input:checked+ol>li {
+li input:checked + ol > li {
   display: block;
   margin: 0 0 0.063em;
 }
 
-li input:checked+ol>li:first-child {
+li input:checked + ol > li:first-child {
   margin: 0 0 0.125em;
 }
 
@@ -334,7 +340,7 @@ main section {
 }
 
 .info-button {
-  margin-left: 70px;
+  margin-left: 37px;
   color: #F25597;
   border: transparent;
   background: transparent;
@@ -358,17 +364,16 @@ main section {
 .video-details {
   color: #F25597;
   text-shadow:
-  -2px 12px 0 #000,
-   -1.5px 0px 0 rgba(169, 0, 255, 1);
-   font-size: 13px;
-
+    -2px 12px 0 #000,
+    -1.5px 0px 0 rgba(169, 0, 255, 1);
+  font-size: 13px;
+  padding: 3px 0;
 }
 
 .video-search-info {
   text-transform: uppercase;
   color: #fff;
-  /* padding: 15px 0 0; */
-  margin:  0 0 25px;
+  margin: 3px 0 20px;
   font-size: 12px;
   text-shadow: 
   -1px 0px 0 rgba(169, 0, 255, 1),
@@ -384,9 +389,6 @@ main section {
   -2px 0px 0 rgba(16, 10, 255, 1);
   font-weight: lighter;
 }
-/* ................. */
-
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -442,13 +444,8 @@ main section {
       display: grid;
       grid-gap: 15px;
       grid-template-columns: calc(100% - 7px) 0;
-      /* grid-auto-rows: 100vh; */
       grid-template-areas:
         "video-information video-information";
-      /* align-items: start; */
-      /* z-index: 11; */
-      /* position: relative; */
-      /* height: 1750px; */
     }
 
     .dotted-line:after {
@@ -467,16 +464,8 @@ main section {
     }
   }
 
-@media only screen and (max-width: 760px) {
-  .video-title {
-    font-size: 20px;
-  }
-  .video-details {
-    font-size: 15px;
-  }
-}
-
 @media only screen and (max-width: 620px) {
+
   .video-title {
     font-size: 18px;
   }
@@ -502,6 +491,13 @@ main section {
   }
 
   .two-line {
-    margin-top: 10px;
+    margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  #logo{
+    width: 308px;
   }
 }
