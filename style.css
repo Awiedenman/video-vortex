@@ -31,7 +31,7 @@ header video {
 }
 
 #logo {
-  height: 45px;
+  height: 50px;
   position: absolute;
   top: 51px;
   left: 120px;
@@ -169,7 +169,21 @@ main .container {
 .video-information {
   grid-area: video-information;
   width: 100%;
+}
 
+.video-title {
+  color: #fff;
+  padding-top: 15px;
+  text-shadow: 
+    -1.5px 0px 0 rgba(169, 0, 255, 1),
+    -3px 0px 0 rgba(16, 10, 255, 1);
+  font-size: 25px;
+
+}
+.video-details{
+color: #F25597;
+padding-top: 10px;
+text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
 }
 
 .checkbox {
@@ -192,6 +206,9 @@ label {
   opacity: 0;
   z-index: 3;
 }
+.multiple-label, .file-label {
+  text-transform: uppercase;
+}
 
 .single {
   opacity:0;
@@ -203,13 +220,13 @@ label {
   display: block;
   position: absolute;
   top: 0;
-  left: -14px;
+  left: -8px;
   height: 20px;
   width: 20px;
   background-image: url('./assets/Images/vv-arrow-menu-and-filter.svg');
   background-position: center;
   background-size: cover;
-  transition: 0.75s ease-in-out
+  transition: 0.5s ease-in-out
 }
 
 .multiple:checked + ol:before {
@@ -221,8 +238,8 @@ label {
   display: inline-block;
   width: 20px;
   height: 20px;
-  left: -11px;
-  top: -2px;
+  left: -6px;
+  top: -4px;
   vertical-align: middle;
   background-color: inherit;
   border: 2px solid #fff;
@@ -265,7 +282,7 @@ li {
 }
 
 li label {
-  padding-left: 18px;
+  padding-left: 25px;
   display: block;
   margin: 0 0 25px;
 }
