@@ -47,12 +47,14 @@ header .container {
 }
 
 main {
-  margin: 81px 0; 
-  border-bottom: solid 2px #fff;   
+  margin: 90px 0;
+  /* width:calc(100% - 240px); */
+  /* border-bottom: solid 2px #fff ; */
 }
 
 .bottom-line {
-  width: 80%;
+  width: calc(100% - 240px);
+  margin: 0 auto;
 }
 
 .last-updated {
@@ -151,8 +153,7 @@ main .container {
   margin-top: 20px;
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: 252px auto; 
-  grid-auto-rows: 100vh;
+  grid-template-columns: 22% 77%; 
   grid-template-areas: 
     "filter-tree video-information";
   align-items: start;
@@ -317,7 +318,7 @@ main section {
 }
 
 .dotted-line:after {
-    content: "--------------------------------------------------------------";
+    content: "------------------------------------------------------------------------------------------";
     letter-spacing: 4px;
     color:#fff;
     /* Use letter-spacing to increase space between dots*/
@@ -418,7 +419,7 @@ main section {
       margin-top: 20px;
       display: grid;
       grid-gap: 15px;
-      grid-template-columns: 252px auto;
+      grid-template-columns: calc(100% - 7px) 0;
       grid-auto-rows: 100vh;
       grid-template-areas:
         "video-information video-information";
@@ -427,7 +428,15 @@ main section {
       position: relative;
     }
 
+    .dotted-line:after {
+      content: "-----------------------------------------------------------------------------------------------------";
+    }
+
     .checkbox-container {
       display: none;
+    }
+
+    .bottom-line {
+      width: calc(100% - 20px);
     }
 }
