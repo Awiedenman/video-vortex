@@ -13,6 +13,7 @@
 
 body {
   background: #000;
+  min-width: 375px;
 }
 
 header  {
@@ -54,8 +55,13 @@ main {
 }
 
 .bottom-line {
-  width: calc(100% - 240px);
-  margin: 0 auto;
+  width: calc(100% - 230px);
+  margin: 60px auto;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: -3px 1.6px 0 rgba(16, 10, 255, 1),
+  0px -1.5px 0 rgba(169, 0, 255, 1),
+  2px 1.5px 0 rgba(255, 0, 105, 1);
 }
 
 .last-updated {
@@ -111,9 +117,9 @@ main {
   height: 2px;
   top: 0; 
   box-shadow: 
-  -2px 2px 0 rgba(169, 0, 255, 1),
-  -4px 2px 0 rgba(16, 10, 255, 1), 
-  2px 2px 0 rgba(255, 0, 105, 1);
+    -2px 2px 0 rgba(169, 0, 255, 1),
+    -4px 2px 0 rgba(16, 10, 255, 1), 
+    2px 2px 0 rgba(255, 0, 105, 1);
 }
 
 .search-form:after {
@@ -160,7 +166,6 @@ main .container {
   align-items: start;
   z-index: 11;
   position: relative;
-  height: 828px;
 } 
 
 .checkbox-container {
@@ -305,7 +310,7 @@ main section {
 
 .dotted-line {
   width: 100%;
-  margin: 15px 0;
+  margin: 5px 0 8px;
   font-size: 7px;
   overflow: hidden;
   border: transparent;
@@ -321,33 +326,10 @@ main section {
     color:#fff;
     /* Use letter-spacing to increase space between dots*/
     white-space: nowrap;
-}
 
-/* .video-selection {
-  position: relative;
-  height: 10%;
-}
-
-.dotted-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-image: linear-gradient(to right, transparent 75%, #A900FF 25%);
-  background-size: 4px 100%;
-   box-shadow: -2px 2px 0 rgba(169, 0, 255, 1),
-   -4px 2px 0 rgba(16, 10, 255, 1),
-   2px 2px 0 rgba(255, 0, 105, 1);
-} */
  section .video-information {
   grid-area: video-information;
   width: 100%;
-}
-
-.video-selection {
-  /* position: relative; */
-  height: 65px;
 }
 
 .info-button {
@@ -358,8 +340,8 @@ main section {
   text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
   letter-spacing: 5px;
   font-size: 15px;
-  padding: 0 0 20px;
-  vertical-align: -webkit-baseline-middle;
+  cursor: pointer;
+  vertical-align: text-bottom;
       
 }
 
@@ -386,7 +368,7 @@ main section {
   text-transform: uppercase;
   color: #fff;
   /* padding: 15px 0 0; */
-  margin:  0 0 20px;
+  margin:  0 0 25px;
   font-size: 15px;
   text-shadow: 
   -1px 0px 0 rgba(169, 0, 255, 1),
@@ -458,16 +440,17 @@ main section {
       display: grid;
       grid-gap: 15px;
       grid-template-columns: calc(100% - 7px) 0;
-      grid-auto-rows: 100vh;
+      /* grid-auto-rows: 100vh; */
       grid-template-areas:
         "video-information video-information";
-      align-items: start;
-      z-index: 11;
-      position: relative;
+      /* align-items: start; */
+      /* z-index: 11; */
+      /* position: relative; */
+      /* height: 1750px; */
     }
 
     .dotted-line:after {
-      content: "-----------------------------------------------------------------------------------------------------";
+      content: "---------------------------------------------------------------------------------------------------------------------------------------------------------------";
     }
 
     .checkbox-container {
@@ -475,6 +458,48 @@ main section {
     }
 
     .bottom-line {
-      width: calc(100% - 20px);
+      position: absolute;
+      margin: 30px auto;
+      left: 32px;
+      width: calc(100% - 70px);
     }
+  }
+
+@media only screen and (max-width: 760px) {
+  .video-title {
+    font-size: 20px;
+  }
+  .video-details {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .video-title {
+    font-size: 18px;
+  }
+
+  .video-search-info {
+    font-size: 12px;
+  }
+
+  .video-details {
+    font-size: 12px;
+  }
+
+  .menu-icon {
+    right: 0;
+  }
+
+  #menu-icon-label {
+    display: none;
+  }
+
+  .info-button {
+    margin-left: 10%;
+  }
+
+  .last {
+    margin-top: 10px;
+  }
 }
