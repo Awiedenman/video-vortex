@@ -145,7 +145,8 @@ main {
   display: block;
   position: absolute;
   right: 0;
-  background: #F25597;
+  background: #9d6f9ff0;
+  ;
 }
 
 .menu-icon {
@@ -184,10 +185,6 @@ label {
     -2px 0px 0 rgba(16, 10, 255, 1);
     font-size: 20px;
 }
-
-/* #first-checkbox {
-  margin: 0 0 20px; 
-} */
 
 .multiple {
   opacity: 0;
@@ -233,10 +230,6 @@ label {
   z-index: 1;
   box-shadow: -2px 2px 0 rgba(169, 0, 255, 1);
 }
-
-/* label > .single:checked {
-  color: #F25597;
-} */
 
 .single:checked + .custom-box {
   border: 2px solid #F25597;
@@ -326,6 +319,7 @@ main section {
     color:#fff;
     /* Use letter-spacing to increase space between dots*/
     white-space: nowrap;
+}
 
  section .video-information {
   grid-area: video-information;
@@ -421,7 +415,9 @@ main section {
     }
 
     .menu-tree {
-      z-index: 300;
+      z-index: 20;
+      padding: 24px 24px 0px 43px;
+      width: 272px;
     }
 
     #menu-icon-label {
@@ -499,7 +495,7 @@ main section {
     margin-left: 10%;
   }
 
-  .last {
+  .two-line {
     margin-top: 10px;
   }
 }
