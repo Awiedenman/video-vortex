@@ -9,10 +9,20 @@ const cleanDate = () => {
 }
 
 const toggleFilterMenu = (event) => {
-  console.log('shit');
   document.querySelector('.menu-tree').classList.toggle('hide-menu')
+}
+
+const closeFilterMenu = (event) => {
+  document.querySelector('.menu-tree').classList.remove('hide-menu')
 }
 
 cleanDate();
 
 document.querySelector('.menu-icon').addEventListener('click', toggleFilterMenu);
+document.querySelector('.search-bar').addEventListener('click', closeFilterMenu);
+document.querySelector('#menu-close-container').addEventListener('click', closeFilterMenu);
+document.querySelector('main').addEventListener('click', closeFilterMenu);
+
+
+      
+

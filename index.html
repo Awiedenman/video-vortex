@@ -8,23 +8,21 @@
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-  
   <header>
-    <img class="background-image" src="./assets/Images/vv-grid-bg.jpg" alt="background grid image" aria-hidden="true" hidden>
-    <video autoplay loop muted>
-      <source src="./assets/Images/vv-grid-bg.webm" type="video/mp4">
-    </video>
-    <img id="logo" src="./assets/Images/vv-logo.svg" alt="Brand logo for Video Vortex">
-    <div class="container">
-
-      <p class="last-updated"></p>
-
-      <form action="" class="search-form">
-        <div class="search-icon"></div>
-        <input class="search-bar" type="text" placeholder="Search Selection">
-        <div class="menu-icon"><span id='menu-icon-label'>filter</span></div>
+    <div id="menu-close-container">
+      <img class="background-image" src="./assets/Images/vv-grid-bg.jpg" alt="background grid image" aria-hidden="true" hidden>
+      <video autoplay loop muted>
+        <source src="./assets/Images/vv-grid-bg.webm" type="video/mp4">
+      </video>
+      <img id="logo" src="./assets/Images/vv-logo.svg" alt="Brand logo for Video Vortex">
+     </div> 
+      <div class="container">
+        <p class="last-updated"></p>
+        <form class="search-form">
+          <div class="search-icon"></div>
+          <input class="search-bar" type="text" placeholder="Search Selection">
+        <div class="menu-icon"><span id="menu-icon-label">filter</span></div>
       </form>
-
       <menu>
         <ol class="menu-tree">
           <li>
@@ -39,12 +37,11 @@
               <input class="checkbox single" type="checkbox" name="new-additions">
               <span class="custom-box"></span>
               <span class="checkbox-amount">16</span>
-
             </label>
           </li>
           <li>
             <label class="multiple-label" for="format">format</label>
-            <input class="checkbox multiple" type="checkbox" name="format">
+              <input class="checkbox multiple" type="checkbox" name="format">
             <ol>
               <li>
                 <label class="file-label" for="blu-ray">blu-ray
@@ -71,7 +68,7 @@
           </li>
           <li>
             <label class="multiple-label" for="genre">genre</label>
-            <input class="checkbox multiple" type="checkbox" name="genre">
+              <input class="checkbox multiple" type="checkbox" name="genre">
             <ol>
               <li>
                 <label class="file-label" for="comedy">comedy
@@ -101,7 +98,7 @@
           </li>
           <li>
             <label class="multiple-label" for="decade">decade</label>
-            <input class="checkbox multiple" type="checkbox" name="decade">
+              <input class="checkbox multiple" type="checkbox" name="decade">
             <ol>
               <li>
                 <label class="file-label" for="fifties">fifties
@@ -139,7 +136,6 @@
       </menu>
     </div>
   </header>
-    
   <main>
     <div class="container">
       <aside class="checkbox-container">
@@ -153,107 +149,106 @@
           </li>
           <li>
             <label for="new-additions">New Additions
-            <input class="checkbox single" type="checkbox" name="new-additions">
-            <span class="custom-box"></span>
-            <span class="checkbox-amount">16</span>
+              <input class="checkbox single" type="checkbox" name="new-additions">
+              <span class="custom-box"></span>
+              <span class="checkbox-amount">16</span>
             </label>
           </li>
           <li>
             <label class="multiple-label"for="format">format</label>
-            <input class="checkbox multiple" type="checkbox" name="format">
+              <input class="checkbox multiple" type="checkbox" name="format">
             <ol>
               <li>
                 <label class="file-label" for="blu-ray">blu-ray
-                <input class="checkbox single" type="checkbox" name="blu-ray">
-                <span class="custom-box"></span>
-                <span class="checkbox-amount">405</span>
+                  <input class="checkbox single" type="checkbox" name="blu-ray">
+                  <span class="custom-box"></span>
+                  <span class="checkbox-amount">405</span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="dvd">dvd
-                <input class="checkbox single" type="checkbox" name="dvd">
-                <span class="custom-box"></span>
-                <span class="checkbox-amount">1,340</span>
+                  <input class="checkbox single" type="checkbox" name="dvd">
+                  <span class="custom-box"></span>
+                  <span class="checkbox-amount">1,340</span>
                 </label>
               </li>
               <li>
                 <label class="file-label" class="file-label" for="vhs">vhs
-                <input class="checkbox single" type="checkbox" name="vhs">
-                <span class="custom-box"></span>
-                <span class="checkbox-amount">129</span>
+                  <input class="checkbox single" type="checkbox" name="vhs">
+                  <span class="custom-box"></span>
+                  <span class="checkbox-amount">129</span>
                 </label>
               </li>
             </ol>
           </li>
           <li>
             <label id="genre" class="multiple-label" for="genre">genre</label>
-            <input class="checkbox multiple" type="checkbox" name="genre">
+              <input class="checkbox multiple" type="checkbox" name="genre">
             <ol>
               <li>
                 <label class="file-label" for="comedy">comedy
-                <input class="checkbox single" type="checkbox" name="comedy">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="comedy">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="drama">drama
-                <input class="checkbox single" type="checkbox" name="drama">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="drama">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="horror">horror
-                <input class="checkbox single" type="checkbox" name="horror">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="horror">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="documentary">documentary
-                <input class="checkbox single" type="checkbox" name="documentary">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="documentary">
+                  <span class="custom-box"></span>
                 </label>
               </li>
             </ol>
           </li>
           <li>
             <label id="decade" class="multiple-label" for="decade">decade</label>
-            <input class="checkbox multiple" type="checkbox" name="decade">
+              <input class="checkbox multiple" type="checkbox" name="decade">
             <ol>
               <li>
                 <label class="file-label" for="fifties">fifties
-                <input class="checkbox single" type="checkbox" name="fifties">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="fifties">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="sixties">sixties
-                <input class="checkbox single" type="checkbox" name="sixties">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="sixties">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="seventies">seventies
-                <input class="checkbox single" type="checkbox" name="seventies">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="seventies">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label" for="eighties">eighties
-                <input class="checkbox single" type="checkbox" name="eighties">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="eighties">
+                  <span class="custom-box"></span>
                 </label>
               </li>
               <li>
                 <label class="file-label"for="nineties">nineties
-                <input class="checkbox single" type="checkbox" name="nineties">
-                <span class="custom-box"></span>
+                  <input class="checkbox single" type="checkbox" name="nineties">
+                  <span class="custom-box"></span>
                 </label>
               </li>
             </ol>
           </li>
         </ol> 
       </aside>
-      
       <section class="video-information">
         <h3 class="video-search-info">14 titles found for <span id="video-search-info-span">staff picks + drama</span></h3>
         <article class="video-selection">
@@ -271,14 +266,14 @@
         </article>
           <hr class="dotted-line">
         <article class="video-selection">
-          <div class="video-title">'68</div>
+          <div class="video-title">"68</div>
           <div class="video-details">USA | 1987 | 98 mins | DVD
             <button class="info-button">...</button>
           </div>
         </article>
           <hr class="dotted-line">
         <article class="video-selection">
-          <div class="video-title">'78</div>
+          <div class="video-title">"78</div>
           <div class="video-details">UK | 2014 | 99 mins | DVD
             <button class="info-button">...</button>
           </div>
