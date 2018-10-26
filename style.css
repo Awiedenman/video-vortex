@@ -181,9 +181,9 @@ main .container {
 
 }
 .video-details{
-color: #F25597;
-padding-top: 10px;
-text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
+  color: #F25597;
+  padding-top: 10px;
+  text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
 }
 
 .checkbox {
@@ -196,6 +196,7 @@ label {
   text-shadow: 
     -1px 0px 0 rgba(169, 0, 255, 1),
     -2px 0px 0 rgba(16, 10, 255, 1);
+    font-size: 20px;
 }
 
 /* #first-checkbox {
@@ -326,16 +327,19 @@ main section {
 }
 
 .dotted-line {
-  /* border-bottom: 1px dotted #fff; */
-  /* height:2px; */
   width: 100%;
-  /* specify a height for this hr */
+  margin: 15px 0;
+  font-size: 7px;
   overflow: hidden;
   border: transparent;
+  text-shadow: 
+    -6.85px -0.8px 0 rgba(169, 0, 255, 1),
+    3px 0.8px 0 rgba(16, 10, 255, 1),
+    1px 0.8px 0 rgba(255, 0, 105, 1);
 }
 
 .dotted-line:after {
-    content: "------------------------------------------------------------------------------------------";
+    content: "---------------------------------------------------------------------------------------------------------------------------------------";
     letter-spacing: 4px;
     color:#fff;
     /* Use letter-spacing to increase space between dots*/
@@ -365,7 +369,7 @@ main section {
   text-transform: uppercase;
   color: #fff;
   /* padding: 15px 0 0; */
-  /* margin: 25px 0; */
+  margin:  0 0 20px;
   font-size: 12px;
   text-shadow: 
   -1px 0px 0 rgba(169, 0, 255, 1),
