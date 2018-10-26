@@ -376,7 +376,10 @@ main section {
   /* position: relative; */
   color: #F25597;
   /* padding-top: 10px; */
-  text-shadow: -1.5px 0px 0 rgba(169, 0, 255, 1);
+  text-shadow:
+  -2px 12px 0 #000,
+   -1.5px 0px 0 rgba(169, 0, 255, 1);
+
 }
 
 .video-search-info {
